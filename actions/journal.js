@@ -82,13 +82,7 @@ export async function createJournalEntry(data) {
 
 export async function getJournalEntries({
   collectionId,
-  // ---- Filters can be implemented with backend as well ----
-  // mood = null,
-  // searchQuery = "",
-  // startDate = null,
-  // endDate = null,
-  // page = 1,
-  // limit = 10,
+
   orderBy = "desc", // or "asc"
 } = {}) {
   try {
