@@ -264,6 +264,7 @@ export async function updateJournalEntry(data) {
     if (existingEntry.mood !== mood.id) {
       moodImageUrl = await getPixabayImage(data.moodQuery);
     }
+    console.log(data)
 
     // Update the entry
     const updatedEntry = await db.entry.update({

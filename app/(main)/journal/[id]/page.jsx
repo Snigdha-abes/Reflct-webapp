@@ -18,13 +18,22 @@ export default async function JournalEntryPage({ params }) {
       {/* Header with Mood Image */}
       {entry.moodImageUrl && (
         <div className="relative h-48 md:h-64 w-full">
-          <Image
+          {/* <Image
             src={entry.moodImageUrl}
             alt="Mood visualization"
             className="object-contain"
             fill
-            priority
-          />
+            priority */}
+            <Image
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNJN9YCrvh8-thigc90qdctYI3R1poKI4uQw&s"
+      width={400}
+      height={408}
+      className="object-fill"
+      
+      alt="Pixabay Image"
+      unoptimized // This bypasses Next.js image optimization
+    />
+          
         </div>
       )}
 
